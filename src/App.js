@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "./components/Sidebar";
+import Main from "./components/Main";
 import Searchbar from "./components/Searchbar";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
@@ -17,8 +17,7 @@ function App() {
 	return (
 		<div className="App">
 			<Router>
-				<Searchbar></Searchbar>
-				<Sidebar>
+				<Main>
 					<Routes>
 						<Route path="/" element={<Home />}></Route>
 						<Route path="/genres" element={<Genres />}></Route>
@@ -31,7 +30,7 @@ function App() {
 						<Route path="/add-events" element={<AddEvents />}></Route>
 						<Route path="*" element={<Error />}></Route>
 					</Routes>
-				</Sidebar>
+				</Main>
 			</Router>
 		</div>
 	);
