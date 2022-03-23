@@ -1,11 +1,22 @@
 .searchbar {
 	grid-area: searchbar;
+	position: relative;
+	width: 100%;
 }
 .search-form-input {
 	width: 98%;
-	background-color: hsl(271, 98%, 80%);
+	background-color: blueviolet;
 }
-.search-form-input:active {
-	border: none;
-	outline: none;
+.search-form-input::placeholder {
+	color: gainsboro;
+	padding-left: 1rem;
+}
+.input-btn {
+	position: absolute;
+	top: 0rem;
+	right: 1rem;
+}
+.lang-btn {
+	background: none;
+	color: white;
 }

@@ -22,7 +22,7 @@ function Sidebar() {
 	return (
 		<motion.div
 			animate={{ width: isOpen ? "180px" : "55px" }}
-			className="sidebar shadow">
+			className="sidebar shadow-sm">
 			<button className="hamb-btn">
 				<GiHamburgerMenu onClick={toggle} />
 			</button>

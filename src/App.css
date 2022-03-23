@@ -4,12 +4,12 @@
 	box-sizing: border-box;
 }
 .main-component {
-	background: rgb(148, 148, 235);
-	background: linear-gradient(
+	/* background: rgb(148, 148, 235); */
+	/* background: linear-gradient(
 		169deg,
 		rgba(148, 148, 235, 1) 0%,
 		rgba(247, 247, 247, 1) 100%
-	);
+	); */
 	display: grid;
 	height: 100vh;
 	grid-template: 1fr 8fr 1fr/1fr 12fr;
