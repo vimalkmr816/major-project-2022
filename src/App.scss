@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Manrope", sans-serif;
+	$darkGray: #1c1c1c;
+	$lightGray: #333333;
+}
+.main-component {
+	font-weight: 600;
+	/* background: rgb(148, 148, 235); */
+	/* background: linear-gradient(
+            169deg,
+            rgba(148, 148, 235, 1) 0%,
+            rgba(247, 247, 247, 1) 100%
+        ); */
+	display: grid;
+	height: 100vh;
+	grid-template: 1fr 100fr 1fr/1fr 200fr;
+	grid-template-areas:
+		"sidebar searchbar"
+		"sidebar main"
+		"player player";
+}
+.top-songs {
+	margin-top: 10rem;
+}
+.card {
+	min-width: max-content;
+	border-radius: 10px;
+}
+.card > img {
+	border-radius: 10px 10px 0 0;
+}
+.top-songs-cards,
+.genres-cards,
+.your-playlist-cards,
+.radio-cards,
+.retro-classic-cards,
+.featured-artists-cards,
+.new-releases,
+.top-news-card {
+	overflow: auto;
+	max-width: 90vw;
+	/* padding-left: 1rem; */
+	margin: 2rem auto;
+}
+.main {
+	grid-area: main;
+	background: rgba(148, 148, 235, 0.397);
+}
+.player {
+	grid-area: player;
+	padding: 0 2rem;
+	background: whitesmoke;
+
+	.seek-container {
+		width: 100%;
+		// border: 2px solid red;
+
+		.player-seek {
+			background-color: aqua;
+			cursor: pointer;
+			margin: 0 auto;
+			height: 5px;
+			border: none;
+			outline: none;
+			width: 200%;
+			position: relative;
+			right: 11.2vw;
+			opacity: 1;
+		}
+		// .player-seek::before {
+		// 	content: "";
+		// 	background-color: green;
+		// 	width: 99%;
+		// 	height: 10px;
+		// 	display: block;
+		// 	position: absolute;
+		// 	border-radius: 10px;
+		// 	top: 50%;
+		// 	left: 50%;
+		// 	transform: translate(-50%, -50%);
+		// 	pointer-events: none;
+		// }
+	}
+}
+.searchbar {
+	grid-area: searchbar;
+	position: relative;
+	width: 100%;
+	.search-form-input {
+		width: 100%;
+		background-color: blueviolet;
+		color: whitesmoke;
+	}
+	.search-form-input::placeholder {
+		color: gainsboro;
+		padding-left: 1rem;
+	}
+	.input-btn {
+		position: absolute;
+		top: 0rem;
+		right: 1rem;
+	}
+	.lang-btn {
+		background: none;
+		color: white;
+	}
+}
+.sidebar {
+	grid-area: sidebar;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	color: whitesmoke;
+	height: 100%;
+	.sidebar-header {
+		color: black;
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+		gap: 1rem;
+	}
+	.sidebar-logo {
+		color: rgb(117, 63, 220);
+	}
+	.hamb-btn {
+		border: none;
+		font-size: 1.8rem;
+		background: none;
+	}
+	.list-item {
+		padding: 0.2rem 1rem;
+		display: flex;
+		align-items: baseline;
+		gap: 1rem;
+		margin: 0.5rem 0;
+		color: black;
+		text-decoration: none;
+		transition: 0.2s all ease-in-out;
+	}
+	.list-item .icon {
+		color: rgba(0, 0, 0, 0.575);
+		font-size: 1.5rem;
+	}
+	.list-item:hover .icon {
+		color: rgb(117, 63, 220);
+	}
+	.list-item:hover {
+		border-left: 4px solid rgb(117, 63, 220);
+		color: rgb(117, 63, 220);
+		background: rgb(116, 61, 219, 0.2);
+		transition: 0.2s all ease-in-out;
+	}
+	.list-item:active {
+		border-left: 4px solid rgb(117, 63, 220);
+		color: rgb(117, 63, 220);
+		background: rgb(116, 61, 219, 0.2);
+		transition: 0.2s all ease-in-out;
+	}
+	.add-music-btn {
+		margin: auto;
+	}
+}
