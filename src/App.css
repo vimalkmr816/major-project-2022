@@ -12,9 +12,32 @@
 	); */
 	display: grid;
 	height: 100vh;
-	grid-template: 1fr 8fr 1fr/1fr 12fr;
+	grid-template: 1fr 100fr 1fr/1fr 200fr;
 	grid-template-areas:
 		"sidebar searchbar"
 		"sidebar main"
 		"player player";
+}
+.top-songs {
+	margin-top: 10rem;
+}
+.card {
+	min-width: max-content;
+	border-radius: 10px;
+}
+.card > img {
+	border-radius: 10px 10px 0 0;
+}
+.top-songs-cards,
+.genres-cards,
+.your-playlist-cards,
+.radio-cards,
+.retro-classic-cards,
+.featured-artists-cards,
+.new-releases,
+.top-news-card {
+	overflow: auto;
+	max-width: 90vw;
+	/* padding-left: 1rem; */
+	margin: 2rem auto;
 }

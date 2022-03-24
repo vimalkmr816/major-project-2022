@@ -4,8 +4,9 @@
 	width: 100%;
 }
 .search-form-input {
-	width: 98%;
+	width: 100%;
 	background-color: blueviolet;
+	color: whitesmoke;
 }
 .search-form-input::placeholder {
 	color: gainsboro;
