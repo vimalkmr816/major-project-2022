@@ -4,7 +4,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RiNeteaseCloudMusicFill } from "react-icons/ri";
 import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import "../css/sidebar.css";
+import "../App.scss";
+
 function Sidebar() {
 	const [isOpen, setIsOpen] = useState(false);
 	const toggle = () => setIsOpen(!isOpen);

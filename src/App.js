@@ -2,7 +2,7 @@ import React from "react";
 import Main from "./components/Main";
 import Searchbar from "./components/Searchbar";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import Home from "./pages/Home";
 import Genres from "./pages/Genres";
 import Artists from "./pages/Artists";

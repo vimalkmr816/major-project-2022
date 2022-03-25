@@ -55,35 +55,58 @@
 	padding: 0 2rem;
 	background: whitesmoke;
 
+	.seek-container::before {
+		content: "";
+		background-color: rgba(128, 128, 128, 0.315);
+		width: 100%;
+		height: 3px;
+		display: block;
+		position: relative;
+		border-radius: 10px;
+		top: 10%;
+		left: 51.8%;
+		transform: translate(-50%, 550%);
+		pointer-events: none;
+	}
 	.seek-container {
 		width: 100%;
-		// border: 2px solid red;
-
-		.player-seek {
-			background-color: aqua;
-			cursor: pointer;
-			margin: 0 auto;
-			height: 5px;
-			border: none;
-			outline: none;
-			width: 200%;
-			position: relative;
-			right: 11.2vw;
-			opacity: 1;
+		.progress-bar-container {
+			background-color: blueviolet;
+			height: 4px;
+			display: block;
+			position: rel;
+			border-radius: 10px;
+			top: 50%;
+			transform: translateY(-280%);
+			z-index: 1;
+			user-select: none;
+			pointer-events: none;
 		}
-		// .player-seek::before {
-		// 	content: "";
-		// 	background-color: green;
-		// 	width: 99%;
-		// 	height: 10px;
-		// 	display: block;
-		// 	position: absolute;
-		// 	border-radius: 10px;
-		// 	top: 50%;
-		// 	left: 50%;
-		// 	transform: translate(-50%, -50%);
-		// 	pointer-events: none;
-		// }
+		.player-seek-input {
+			-webkit-appearance: none;
+			height: 5px;
+			background-color: gray;
+			width: 105%;
+			opacity: 0;
+			cursor: pointer;
+		}
+		.thumb {
+			width: 15px;
+			height: 15px;
+			box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.753);
+			z-index: 3;
+			background: gray;
+			position: relative;
+			border-radius: 50%;
+			top: 50%;
+			transform: translate(0%, -130%);
+			pointer-events: none;
+			user-select: none;
+		}
+	}
+	.main-controls {
+		position: relative;
+		top: -1rem;
 	}
 }
 .searchbar {

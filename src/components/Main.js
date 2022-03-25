@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Searchbar from "./Searchbar";
 import "scrollable-component";
-import "../css/main.css";
+import "../App.scss";
 import Sidebar from "./Sidebar";
-import Player from "./Player";
+import Player from "./audioplayer/Player";
 function Main({ children }) {
 	return (
 		<div className="main-component">

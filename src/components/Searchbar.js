@@ -1,6 +1,6 @@
 import React from "react";
 import { IoLanguageOutline } from "react-icons/io5";
-import "../css/searchbar.css";
+import "../App.scss";
 function Searchbar() {
 	return (
 		<div className="searchbar">
