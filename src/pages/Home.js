@@ -65,7 +65,7 @@ function Home() {
 							</p>{" "}
 							04 : 23 : 14 : 45
 							<p>
-								<button className="btn-succes px-3 py-2 border border-0 mt-3">
+								<button className="buy-now-btn btn-success px-3 py-2 border border-0 mt-3">
 									BUY TICKET
 								</button>
 							</p>
